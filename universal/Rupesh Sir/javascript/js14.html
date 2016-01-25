@@ -1,0 +1,21 @@
+
+<html>
+    <head>
+        <script>
+            function show(t){
+
+        document.getElementById("txt1").value=t.value;
+
+            }
+            function clrtxt(t)
+            {
+                t.value="";
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt" onfocus="clrtxt(this)" onblur="show(this)">
+        <input type="text" id="txt1">
+    </body>
+</html>

@@ -1,0 +1,5 @@
+<?php
+$arr=array(90,"akshay",array(0,2,"aks",array("array2",67,90),88),"bajaj n end");
+<pre>
+print_r($arr);                //working only above <?php ... Why? 
+?>

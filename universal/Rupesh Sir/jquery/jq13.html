@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+        <style>
+            .selected{
+                background-color: #FFFFFF;
+                color: blue;
+                font-family: monospace;
+            }
+            
+        </style>
+        <script src="jquery-1.11.2.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+ $("#b1").click(function(){
+
+a=$("input[name='opt']:checked").val();
+$("h1").html(a);
+
+
+ });
+            });
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1>Welcome  </h1>
+        <input type="radio" name="opt" value="Yes">Yes
+        <input type="radio" name="opt" value="No">No
+        
+        <button id="b1">Click1</button>
+        
+    </body>
+</html>

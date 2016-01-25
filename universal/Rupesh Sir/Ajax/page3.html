@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="jquery-1.11.3.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#txt").blur(function(){
+                    $.ajax({
+                        url: "get_name.php",
+                        type: 'GET',
+                        async: true,
+                        data: "name="+$(this).val(),
+                        success: function (data) {
+                            $("#res").html(data);
+                                            
+                                        }
+                                 
+                        
+                    });
+                    
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="txt">
+        <div id="res">TODO write content</div>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <style>
+            #maincontainer{
+               width: 990px;
+                margin:  auto;
+            }
+            #header{
+                height: 200px;
+                background-color: darkolivegreen;
+                position: relative;
+                
+            }
+            #logo{
+                left: 300px;
+                top: 30px;
+                position: absolute;
+            }
+            #menu{
+                height: 50px;
+                background-color: brown;
+                     padding:   1px;
+                     
+            }
+            #menu ul
+            {
+                list-style: none;
+                
+            }
+           #menu ul li a
+            {
+                text-decoration: none;
+            }
+            #menu ul li{
+                display: inline;
+                margin:  20px;
+              background-color: yellow;
+            
+                
+            }
+            #gourav{
+                background-color: darkslateblue;;
+            }
+            #left{
+                width: 190px;
+                min-height: 300px;
+                background-color: green;
+                float: left;
+                
+            }
+            #art
+            {
+                width: 500px;
+                min-height: 300px;
+                background-color: blueviolet;;
+                float: left;
+            }
+            #right
+            {
+                width: 300px;
+                min-height: 300px;
+                background-color: darkgoldenrod;;
+                float: left;
+                
+                
+            }
+            #footer{
+                height: 100px;
+                background-color: blue;
+            }
+            .clear{
+                clear: both;
+            }
+            p.selected
+            {
+               text-transform: uppercase; 
+            }
+            h1,h2,h3,table,tr,td,span{
+                
+            }
+            .test
+            {
+                color: red;
+            }
+.test:first-letter
+            {
+                font-size: 40px;
+                
+            }
+            a:hover
+            {
+                color: tomato;
+              }
+              
+              a:active
+              {
+                  background-color: cyan; 
+              }
+              #menu:hover ul li a
+              {
+                background-color:  white;;
+                  
+              }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="maincontainer">
+            <div id="header">
+                <img src="logo.jpeg" id="logo">
+                
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registration</a></li>
+                    </ul>
+                </div>
+            <div id="gourav">
+                <div id="left"><p class="test">aaaaaaaaaaaaa</p></div>
+                <div id="art">bbbbbbbbbb 
+                    <div class="selected">dhsgfhj gdhjfghjd gfhg</div>
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Registration</a></li>
+                    
+                    </ul>
+                    <p class="selected test">dhsgfhj gdhjfghjd gfhg</p>
+                </div>
+                <div id="right"><a href="#">Google</a>
+                <p class="selected">dhsgfhj gdhjfghjd gfhg</p>
+                </div>
+            </div>
+            <p class="clear"></p>
+            <div id="footer"></div>
+            
+            
+        </div>
+    </body>
+</html>

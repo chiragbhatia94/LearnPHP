@@ -1,0 +1,37 @@
+onreadystatechange
+
+An event handler for an event that fires at every state change.
+readyState
+
+The readyState property defines the current state of the XMLHttpRequest object.
+
+The following table provides a list of the possible values for the readyState property:
+State 	Description
+0 	The request is not initialized.
+1 	The request has been set up.
+2 	The request has been sent.
+3 	The request is in process.
+4 	The request is completed.
+
+readyState = 0 After you have created the XMLHttpRequest object, but before you have called the open() method.
+before you have called the open() method.
+
+readyState = 1 After you have called the open() method, but before you have called send().
+
+readyState = 2 After you have called send().
+
+readyState = 3 After the browser has established a communication with the server, but before the server has completed the response.
+
+readyState = 4 After the request has been completed, and the response data has been completely received from the server.
+responseText
+
+Returns the response as a string.
+responseXML
+
+Returns the response as XML. This property returns an XML document object, which can be examined and parsed using the W3C DOM node tree methods and properties.
+status
+
+Returns the status as a number (e.g., 404 for "Not Found" and 200 for "OK").
+statusText
+
+Returns the status as a string (e.g., "Not Found" or "OK").

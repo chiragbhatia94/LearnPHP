@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function getdata()
+            {
+                alert("start");
+                var http=new XMLHttpRequest();
+                http.onreadystatechange=mychnage;
+                http.open("GET","mydata.txt",true);
+                http.send();
+                
+                function mychnage()
+                {
+                   alert(http.readyState+" "+http.status);
+                    if(http.readyState==4 && http.status==200)
+                    {
+                  //      alert("Done");
+                     document.getElementById("res").innerHTML=http.responseText;   
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="getdata()">Click</button>
+        <div id="res">TODO write content</div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Functions</title>
+    </head>
+    <body>
+    <script>
+        show();
+    function show()
+        {
+            document.write("Show called inside 1st script tag");
+        }
+    </script>                                                              
+         
+    <script>
+        show();
+        
+        function show()
+        {
+            document.write("Show changed inside 2nd script tag");
+        }
+        show();
+        show();
+    </script>
+    </body>
+</html>

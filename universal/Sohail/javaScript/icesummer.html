@@ -1,0 +1,26 @@
+
+<html>
+    <head>
+        <title>Summer Collection</title>
+        <style></style>
+        <script>
+            function check()
+            {
+                 var s=document.getElementById("v").value;
+                 var s1=document.getElementById("c").value;
+                alert("You like Vanilla"+s+s1);
+            }
+            function check1(){
+                alert("You Like Chocolate");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Vanilla
+        <input type="checkbox" name="van" id="v" onclick="return check()">
+            Chocolate
+        <input type="checkbox" name="choc" id="c" onclick="return check()">
+        </form>
+        </body>
+</html>

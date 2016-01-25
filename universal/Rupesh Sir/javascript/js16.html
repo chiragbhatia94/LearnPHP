@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <script>
+            function getdata()
+            {
+                t=document.getElementById("city").selectedIndex;
+                v=document.getElementById("city").value;
+                
+                document.getElementById("res").innerHTML=v+"<br>"+t;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <select onchange="getdata()" id="city">
+            <option value="">Select City</option>
+            <option value="INDB">Indore</option>
+            <option value="BPL">Bhopal</option>
+            <option value="DWS">Dewas</option>
+            <option value="UJN">Ujjian</option>
+            
+            
+        </select>
+
+        <h1 id="res"></h1>
+    </body>
+</html>

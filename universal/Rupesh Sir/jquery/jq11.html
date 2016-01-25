@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+        <style>
+            .selected{
+                background-color: #FFFFFF;
+                color: blue;
+                font-family: monospace;
+            }
+            
+        </style>
+        <script src="jquery-1.11.2.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+ $("#b1").click(function(){
+t=$("#t1").val();
+$("h1").html(t);
+ });
+            });
+            
+            
+        </script>
+    </head>
+    <body>
+        
+        <input type="text" id="t1">
+        <h1>                   </h1>
+        <button id="b1">Click1</button>
+        
+    </body>
+</html>

@@ -1,0 +1,17 @@
+            h1{
+                font-size: 14px !important;
+                background-color: darkmagenta;
+                color: red;                
+            }
+            #xyz
+            {
+                font-size: 30px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+            .myclass
+            {
+                color:green;
+                text-decoration: none;
+                border: 10px dotted;
+            }
